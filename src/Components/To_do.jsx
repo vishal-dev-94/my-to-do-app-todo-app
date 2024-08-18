@@ -97,8 +97,8 @@ export default function To_do() {
                     {complete ? "InComplete" : "Complete"}
                     {}
                   </button>
-                  <div className="done">
-                    {complete ? "InComplete" : "Complete"}
+                  <div className={`${complete ? "text-white border-1 bg-success p-1 rounded-2" : "text-white border-1 bg-warning p-1 rounded-2"}`}>
+                    {complete ? "Complete" : "InComplete"}
                   </div>
                 </div>
               </div>
